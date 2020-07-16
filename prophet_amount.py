@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
 import pandas as pd
 import numpy as np
 from fbprophet import Prophet
@@ -69,7 +72,8 @@ def Mid_autumn_festival_list(con):
 
 
 def main():
-    market_parameter = pd.read_csv('./market_parameter.csv')
+    # market_parameter = pd.read_csv('./market_parameter.csv')
+    market_parameter = pd.read_csv('/home/lazyso/anaconda3/envs/Prophetenv/banana_project_prophet_amount/market_parameter.csv')
 
     con = create_engine("mysql+pymysql://dbuser:20200428@localhost:3306/fruveg")
 
